@@ -1,0 +1,16 @@
+{
+	"user": "Katzhouu",
+	"repo": "pawn-plus-tasks",
+	"entry": "test.pwn",
+	"output": "gamemodes/test.amx",
+	"dependencies": [
+		"pawn-lang/samp-stdlib",
+		"IS4Code/PawnPlus:v1.5.1"
+	],
+	"runtime": {
+		"version": "0.3.7",
+		"mode": "server",
+		"rcon_password": "password",
+		"port": 7777
+	}
+}
