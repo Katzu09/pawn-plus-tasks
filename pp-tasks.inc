@@ -31,15 +31,13 @@ public _pp@on_init@PPTasks()
         new String:funcname = amx_public_name_s(i);
         new List:regex = str_extract(funcname, "^@pT_(.*?)_(\\d+)$");
         if (regex) {
-            new callback[64], interval_str[10];
-            list_get_str(regex, 1, callback);
+            new interval_str[10];
             list_get_str(regex, 2, interval_str);
             list_delete_deep(regex);
 
             new interval = strval(interval_str);
             SetTimer_s(funcname, interval, true);
         }
-        str_delete(funcname);
     }
     return 1;
 }
